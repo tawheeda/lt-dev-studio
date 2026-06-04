@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LT Dev Studio — Outline Mark</title>
+  <desc id="desc">Rounded square outline with gradient stroke and outlined LT monogram matching brand colors.</desc>
+
+  <defs>
+    <!-- Brand gradient (teal → lime) -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#009ca6"/>
+      <stop offset="100%" stop-color="#8bc34a"/>
+    </linearGradient>
+
+    <!-- Deep navy solid (for subtle accents / fallback) -->
+    <style>
+      .tile { fill: none; stroke: url(#brandGrad); stroke-width: 18; }
+      .mono { fill: none; stroke: url(#brandGrad); stroke-width: 16; stroke-linejoin: round; stroke-linecap: round; }
+      @media (prefers-color-scheme: dark) {
+        .tile { stroke: url(#brandGrad); }
+        .mono { stroke: url(#brandGrad); }
+      }
+    </style>
+  </defs>
+
+  <!-- Outline tile -->
+  <rect x="20" y="20" width="472" height="472" rx="64" class="tile"/>
+
+  <!-- Outlined monogram using a classic serif stack -->
+  <text x="256" y="320"
+        text-anchor="middle"
+        font-family="Playfair Display, Times New Roman, Times, serif"
+        font-size="260"
+        class="mono">
+    LT
+  </text>
+</svg>

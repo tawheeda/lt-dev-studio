@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#0b0e14" />
+<link rel="icon" type="image/svg+xml" href="assets/mark-lt.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="assets/styles.css" />
+
+<title>Contact — LT Dev Studio</title>
+<meta name="description" content="Contact LT Dev Studio to start your website project. Online-based web design services for South African businesses." />
+<meta property="og:title" content="Contact — LT Dev Studio" />
+<meta property="og:description" content="Start a website project with LT Dev Studio." />
+</head>
+<body>
+<div id="page-loader">
+  <img src="assets/mark-lt-outline.svg" alt="" />
+  <div class="bar"><span></span></div>
+  <p class="label">LT Dev Studio</p>
+</div>
+
+<header class="header">
+  <nav class="container nav">
+    <a class="brand" href="index.html" data-nav>
+      <img src="assets/mark-lt-outline.svg" alt="" />
+      <span>LT Dev <span class="accent">Studio</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-nav>Home</a></li>
+      <li><a href="about.html" data-nav>About</a></li>
+      <li><a href="services.html" data-nav>Services</a></li>
+      <li><a href="work.html" data-nav>Work</a></li>
+      <li><a href="contact.html" data-nav>Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span data-icon="menu" class="i18" style="display:inline-flex"></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" aria-hidden="true">
+  <ul>
+    <li><a href="index.html" data-nav>Home</a></li>
+    <li><a href="about.html" data-nav>About</a></li>
+    <li><a href="services.html" data-nav>Services</a></li>
+    <li><a href="work.html" data-nav>Work</a></li>
+    <li><a href="contact.html" data-nav>Contact</a></li>
+    <li class="cta-wrap"><a href="contact.html">Get a Quote</a></li>
+  </ul>
+</div>
+
+<main class="page-enter">
+  <section class="container" style="padding:48px 0 60px;text-align:center">
+    <div class="reveal"><span class="pill"><span data-icon="mail" class="i14" style="display:inline-flex"></span> Get in touch</span></div>
+    <h1 class="reveal" style="font-size:clamp(40px,7vw,84px);font-weight:700;line-height:1.05;max-width:760px;margin:24px auto 0">Let's talk about <span class="text-gradient">your website</span></h1>
+    <p class="reveal" style="max-width:560px;margin:24px auto 0;color:var(--muted);font-size:17px">Whether you need a new website or want to improve your current one, send a message and we'll take it from there.</p>
+  </section>
+
+  <section class="section container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Project enquiry</p>
+      <h2>Start your <span class="text-gradient">project</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="form-card reveal" novalidate>
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" />
+        <div class="field"><label>Your name</label><input type="text" name="name" maxlength="100" placeholder="Jane Doe" required /></div>
+        <div class="field"><label>Email</label><input type="email" name="email" maxlength="255" placeholder="you@business.co.za" required /></div>
+        <div class="field"><label>Tell me about your project</label><textarea name="message" maxlength="4000" rows="5" placeholder="What does your business do? What do you want the website to achieve?" required></textarea></div>
+        <button type="submit" class="btn btn-primary submit">Send Message <span data-icon="send" style="display:inline-flex;width:15px;height:15px"></span></button>
+        <p class="form-note">We'll reply by email — usually within 24 hours.</p>
+        <div class="form-status"></div>
+      </form>
+
+      <div class="contact-side reveal">
+        <a class="direct" href="https://wa.me/27754875016" target="_blank" rel="noopener">
+          <div class="icon"><span data-icon="whats" class="i20" style="display:inline-flex"></span></div>
+          <div class="meta"><p>WhatsApp</p><small>Quick response</small><p class="val">+27 75 487 5016</p></div>
+        </a>
+        <a class="direct" href="mailto:info@ltdevstudio.co.za">
+          <div class="icon"><span data-icon="mail" class="i20" style="display:inline-flex"></span></div>
+          <div class="meta"><p>Email</p><small>Detailed enquiries</small><p class="val">info@ltdevstudio.co.za</p></div>
+        </a>
+        <div class="contact-info">
+          <span data-icon="spark" class="i20" style="display:inline-flex"></span>
+          <h4>Online-based studio</h4>
+          <p>LT Dev Studio operates entirely online — communication and project delivery are handled digitally so we can work with businesses anywhere in South Africa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" data-nav>
+        <img src="assets/mark-lt-outline.svg" alt="" />
+        <span>LT Dev <span class="accent">Studio</span></span>
+      </a>
+      <p>An independent web design studio building fast, modern websites for South African businesses that want clarity, credibility, and more enquiries.</p>
+      <a class="email" href="mailto:info@ltdevstudio.co.za">info@ltdevstudio.co.za <span data-icon="arrowUR" class="i14" style="display:inline-flex"></span></a>
+    </div>
+    <div>
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="about.html" data-nav>About</a></li>
+        <li><a href="services.html" data-nav>Services</a></li>
+        <li><a href="work.html" data-nav>Work</a></li>
+        <li><a href="contact.html" data-nav>Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/laone-setlhoke-856503167" target="_blank" rel="noopener" aria-label="LinkedIn"><span data-icon="linkedin" class="i16" style="display:inline-flex"></span></a>
+        <a href="https://github.com/tawheeda" target="_blank" rel="noopener" aria-label="GitHub"><span data-icon="github" class="i16" style="display:inline-flex"></span></a>
+        <a href="https://www.instagram.com/lt.dev_studio" target="_blank" rel="noopener" aria-label="Instagram"><span data-icon="insta" class="i16" style="display:inline-flex"></span></a>
+        <a href="https://wa.me/27754875016" target="_blank" rel="noopener" aria-label="WhatsApp"><span data-icon="whats" class="i16" style="display:inline-flex"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> LT Dev Studio. All rights reserved.</p>
+    <p>Designed &amp; built in South Africa.</p>
+  </div>
+</footer>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
+
