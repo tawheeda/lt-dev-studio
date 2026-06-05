@@ -424,3 +424,265 @@ main.page-enter{animation:pageIn .5s var(--ease)}
 .i18{width:18px;height:18px}
 .i20{width:20px;height:20px}
 .i22{width:22px;height:22px}
+
+/* ================================
+   Mobile spacing fixes
+================================ */
+@media (max-width: 600px){
+  main{
+    padding-top: 88px;
+  }
+
+  .container{
+    padding-inline: 24px;
+  }
+
+  .hero{
+    padding: 56px 0 80px;
+  }
+
+  .hero h1{
+    font-size: 44px;
+    line-height: 1.08;
+  }
+
+  .hero p.lead{
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .section{
+    padding: 72px 0;
+  }
+
+  .section-head{
+    margin-bottom: 34px;
+  }
+
+  .card,
+  .pkg,
+  .project .body,
+  .process-card,
+  .value-card{
+    padding: 28px 24px;
+  }
+
+  .value-card .tag{
+    right: 18px;
+    top: 18px;
+    font-size: 72px;
+    opacity: 0.08;
+  }
+
+  .project{
+    margin-inline: 0;
+  }
+
+  .project .thumb img{
+    object-position: center;
+  }
+
+  .hero-ctas{
+    gap: 14px;
+  }
+
+  .btn{
+    padding: 14px 22px;
+  }
+}
+
+
+/* ================================
+   Default theme: light mode
+================================ */
+:root{
+  --bg:#f6f8fb;
+  --fg:#111827;
+  --surface:#ffffff;
+  --surface-2:#eef2f7;
+  --muted:#4b5563;
+  --border:rgba(17,24,39,.12);
+  --input:rgba(17,24,39,.16);
+  --primary:#0f9f7a;
+  --primary-2:#16b892;
+  --primary-fg:#ffffff;
+  --accent:#6d5dfc;
+  --shadow-glow:0 0 50px -18px rgba(15,159,122,.45);
+  --shadow-card:0 12px 30px -18px rgba(15,23,42,.25);
+  --gradient-primary:linear-gradient(135deg,#16c79a,#6d5dfc);
+  --gradient-text:linear-gradient(135deg,#111827,#0f9f7a);
+  --gradient-radial:
+    radial-gradient(circle at 30% 20%, rgba(22,199,154,.16), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(109,93,252,.14), transparent 55%);
+}
+
+.glass,
+.header.scrolled,
+.mobile-nav,
+.btn-ghost,
+.pill{
+  background:rgba(255,255,255,.78);
+}
+
+.field input,
+.field textarea{
+  background:rgba(255,255,255,.8);
+}
+
+.project .tag{
+  background:rgba(17,24,39,.04);
+}
+
+
+/* ================================
+   Inverted system theme
+   Phone dark mode = website light
+   Phone light mode = website dark
+================================ */
+
+/* Phone is on LIGHT mode → website becomes DARK */
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#0b0e14;
+    --fg:#f3f5f8;
+    --surface:#151923;
+    --surface-2:#1c2230;
+    --muted:#b3bccb;
+    --border:rgba(255,255,255,.1);
+    --input:rgba(255,255,255,.14);
+    --primary:#5ee8c4;
+    --primary-2:#7df0d6;
+    --primary-fg:#0b0e14;
+    --accent:#b48cff;
+    --shadow-glow:0 0 60px -10px rgba(94,232,196,.45);
+    --shadow-card:0 10px 30px -15px rgba(0,0,0,.55);
+    --gradient-primary:linear-gradient(135deg,#5ee8c4,#b48cff);
+    --gradient-text:linear-gradient(135deg,#ffffff,#5ee8c4);
+    --gradient-radial:
+      radial-gradient(circle at 30% 20%, rgba(94,232,196,.18), transparent 60%),
+      radial-gradient(circle at 80% 70%, rgba(180,140,255,.18), transparent 55%);
+  }
+
+  .glass,
+  .header.scrolled,
+  .btn-ghost,
+  .pill{
+    background:rgba(21,25,35,.72);
+  }
+
+  .mobile-nav{
+    background:rgba(11,14,20,.9);
+  }
+
+  .field input,
+  .field textarea{
+    background:rgba(11,14,20,.55);
+  }
+
+  .project .tag{
+    background:rgba(0,0,0,.25);
+  }
+}
+
+/* Phone is on DARK mode → website stays LIGHT */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#f6f8fb;
+    --fg:#111827;
+    --surface:#ffffff;
+    --surface-2:#eef2f7;
+    --muted:#4b5563;
+    --border:rgba(17,24,39,.12);
+    --input:rgba(17,24,39,.16);
+    --primary:#0f9f7a;
+    --primary-2:#16b892;
+    --primary-fg:#ffffff;
+    --accent:#6d5dfc;
+    --shadow-glow:0 0 50px -18px rgba(15,159,122,.45);
+    --shadow-card:0 12px 30px -18px rgba(15,23,42,.25);
+    --gradient-primary:linear-gradient(135deg,#16c79a,#6d5dfc);
+    --gradient-text:linear-gradient(135deg,#111827,#0f9f7a);
+    --gradient-radial:
+      radial-gradient(circle at 30% 20%, rgba(22,199,154,.16), transparent 60%),
+      radial-gradient(circle at 80% 70%, rgba(109,93,252,.14), transparent 55%);
+  }
+
+  .glass,
+  .header.scrolled,
+  .btn-ghost,
+  .pill{
+    background:rgba(255,255,255,.78);
+  }
+
+  .mobile-nav{
+    background:rgba(246,248,251,.94);
+  }
+
+  .field input,
+  .field textarea{
+    background:rgba(255,255,255,.8);
+  }
+
+  .project .tag{
+    background:rgba(17,24,39,.04);
+  }
+}
+
+/* ================================
+   Final safe overrides
+================================ */
+
+/* Better mobile padding */
+@media (max-width: 600px){
+  .container{
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .hero h1{
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .card,
+  .pkg,
+  .project .body,
+  .process-card,
+  .value-card,
+  .form-card,
+  .story,
+  .cta{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .value-card .tag{
+    right: 12px;
+    top: 12px;
+    font-size: 58px;
+    opacity: .06;
+  }
+}
+
+/* Make gradient words clearer on light mode */
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme: light;
+    --gradient-text:linear-gradient(135deg,#111827,#047857);
+  }
+
+  .text-gradient{
+    background:var(--gradient-text);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+}
+
+/* Keep dark mode text readable when site switches dark */
+@media (prefers-color-scheme: light){
+  :root{
+    color-scheme: dark;
+    --muted:#c2cad8;
+  }
+}
